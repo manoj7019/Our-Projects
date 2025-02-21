@@ -177,7 +177,8 @@ body {
 #INGJ:hover, 
 #INHR:hover {
     fill: #4dff56;
-    cursor: url(./images/click\ \(1\).png), auto;
+    /* cursor: url(./images/click\ \(1\).png), auto; */
+    cursor:pointer;
 }
 
 .project-card-container {
