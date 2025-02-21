@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: monospace, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -22,6 +24,8 @@ body {
 
 .box {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding-right: 48px;
 }
 
@@ -185,7 +189,7 @@ body {
     display: none;
 }
 
-.project-card {
+/* .project-card {
     width: 200px;
     height: min-content;
     display: flex;
@@ -194,12 +198,12 @@ body {
     border: 1px solid black;
     padding: 16px;
     align-items: flex-start;
-}
+} */
 
-.card-image {
+/* .card-image {
     width: 30px;
     height: auto;
-}
+} */
 
 .kakinada-text {
     display: none;
@@ -213,6 +217,43 @@ body {
 /* ADDING CLASSLISTS TO FETCH IN JAVASCRIPT */
 .project-card-containers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
     gap: 16px;
+}
+
+.project-card {
+    border: 1px solid rgba(0, 128, 0, 0.226);
+    padding: 24px;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(172, 255, 47, 0.445);
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.project-card-new .completed {
+    background-color: greenyellow;
+}
+
+h5 {
+    margin-bottom: 4px;
+    opacity: 0.5;
+}
+
+.project-card.progress {
+    background-color: rgba(107, 107, 104, 0.089);
+}
+
+.project-card > div > p {
+    font-weight: 500;
+}
+
+.card-image {
+    width: 60px;
+    height: auto;
+    opacity: 0.5;
+    /* background: #4dff56; */
 }
