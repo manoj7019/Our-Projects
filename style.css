@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.state {
+    width: 20rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    padding-right: 48px;
+}
+
+.box2 {
+    display: flex;
+}
+/* Add more state positions as needed */
+
+.star2, .star3 {
+    margin-left: -30px;
+}
+
+.star2:hover, .star3:hover {
+    transform: scale(1.2);
+}
+
+.abc:hover {
+    cursor: pointer;
+    fill: red;
+}
+
+.pin-icon {
+    position: absolute;
+    width: 18px;
+    height: auto;
+    /* cursor: pointer; */
+}
+
+.pin-icon2 {
+    /* position: absolute; */
+    width: 30px;
+    height: auto;
+}
+
+
+
+.pin-kakinada1 {
+    margin-left: 275px;
+    margin-top: -210px;
+}
+.pin-kakinada2 {
+    margin-left: 265px;
+    margin-top: -210px;
+}
+.pin-kakinada3 {
+    margin-left: 270px;
+    margin-top: -215px;
+}
+
+.pin-raipur {
+    margin-left: 295px;
+    margin-top: -310px;
+}
+.pin-bilaspur {
+    margin-left: 290px;
+    margin-top: -300px;
+}
+
+.pin-bhopal {
+    margin-left: 210px;
+    margin-top: -320px;
+}
+.pin-bhopal2 {
+    margin-left: 215px;
+    margin-top: -323px;
+}
+.pin-indore {
+    margin-left: 176px;
+    margin-top: -315px;
+}
+.pin-jabalpur {
+    margin-left: 250px;
+    margin-top: -319px;
+}
+.pin-seoni {
+    margin-left: 235px;
+    margin-top: -305px;
+}
+
+.pin-chandauli {
+    margin-left: 305px;
+    margin-top: -370px;
+}
+.pin-prayagraj {
+    margin-left: 280px;
+    margin-top: -358px;
+}
+.pin-haidergarh {
+    margin-left: 260px;
+    margin-top: -395px;
+}
+.pin-barabanki {
+    margin-left: 250px;
+    margin-top: -400px;
+}
+.pin-pilibhit {
+    margin-left: 250px;
+    margin-top: -420px;
+}
+
+.pin-jind {
+    margin-left: 175px;
+    margin-top: -435px;
+}
+.pin-jhajjar1 {
+    margin-left: 185px;
+    margin-top: -430px;
+}
+.pin-jhajjar2 {
+    margin-left: 185px;
+    margin-top: -420px;
+}
+.pin-hisar {
+    margin-left: 190px;
+    margin-top: -418px;
+}
+.pin-panipat {
+    margin-left: 178px;
+    margin-top: -425px;
+}
+.pin-fatehbad {
+    margin-left: 190px;
+    margin-top: -440px;
+}
+
+.pin-suratgarh {
+    margin-left: 145px;
+    margin-top: -437px;
+}
+.pin-vadodara {
+    margin-left: 135px;
+    margin-top: -310px;
+}
+
+
+
+
+#INAP,
+#INRJ,
+#INMP,
+#INUP,
+#INCT, 
+#INHR,
+#INGJ {
+    fill: rgba(0, 128, 0, 0.904);
+}
+
+#INAP:hover,
+#INRJ:hover,
+#INMP:hover,
+#INUP:hover,
+#INCT:hover, 
+#INGJ:hover, 
+#INHR:hover {
+    fill: #4dff56;
+    cursor: url(./images/click\ \(1\).png), auto;
+}
+
+.project-card-container {
+    display: none;
+}
+
+.project-card {
+    width: 200px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid black;
+    padding: 16px;
+    align-items: flex-start;
+}
+
+.card-image {
+    width: 30px;
+    height: auto;
+}
+
+.kakinada-text {
+    display: none;
+}
+
+.pin-kakinada1:hover + .kakinada-text {
+    display: block;
+    position: absolute;
+}
+
+/* ADDING CLASSLISTS TO FETCH IN JAVASCRIPT */
+.project-card-containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
