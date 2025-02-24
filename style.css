@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background: black;
-    color: white; */
+    background: black;
+    color: white;
 }
 
 * {
@@ -23,14 +23,18 @@ body {
     justify-content: space-between;
 } */
 
-.projects-head {
+:root {
+    --stateColor: hsla(100, 60%, 50%, 0.5);
+}
+
+.map-projects-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 48px 0 48px;
 }
 
-.project-buttons {
+.map-project-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,158 +48,197 @@ button {
     font-weight: 600;
     padding: 8px 32px;
     border: none;
+    cursor: pointer;
 }
 
-.bio-epc-button {
+.map-active-button {
     background-color: green;
     color: white;
 }
 
-.state {
+.map-state {
     width: 20rem;
     height: auto;
     cursor: pointer;
 }
 
-.box {
+.map-box {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding-right: 48px;
 }
 
-.box2 {
+.map-box1 {
+    width: 100%;
+}
+
+.map-box2 {
     display: flex;
+    width: 100%;
+}
+
+.map-default-projects-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 32px;
+}
+
+li {
+    list-style: none;
 }
 /* Add more state positions as needed */
 
-.star2, .star3 {
+.map-star2, .map-star3 {
     margin-left: -30px;
 }
 
-.star2:hover, .star3:hover {
+.map-star2:hover, .map-star3:hover {
     transform: scale(1.2);
 }
 
-.abc:hover {
+.map-abc:hover {
     cursor: pointer;
     fill: red;
 }
 
-.pin-icon {
+.map-pin-icon {
     position: absolute;
     width: 18px;
     height: auto;
     /* cursor: pointer; */
 }
 
-.pin-icon2 {
+.map-pin-icon2 {
     /* position: absolute; */
     width: 30px;
     height: auto;
 }
-
-
-
-.pin-kakinada1 {
+.map-pin-kakinada1 {
     margin-left: 275px;
     margin-top: -210px;
 }
-.pin-kakinada2 {
+.map-pin-kakinada2 {
     margin-left: 265px;
     margin-top: -210px;
 }
-.pin-kakinada3 {
+.map-pin-kakinada3 {
     margin-left: 270px;
     margin-top: -215px;
 }
 
-.pin-raipur {
+.map-pin-raipur {
     margin-left: 295px;
     margin-top: -310px;
 }
-.pin-bilaspur {
+.map-pin-bilaspur {
     margin-left: 290px;
     margin-top: -300px;
 }
 
-.pin-bhopal {
+.map-pin-bhopal {
     margin-left: 210px;
     margin-top: -320px;
 }
-.pin-bhopal2 {
+.map-pin-bhopal2 {
     margin-left: 215px;
     margin-top: -323px;
 }
-.pin-indore {
+.map-pin-indore {
     margin-left: 176px;
     margin-top: -315px;
 }
-.pin-jabalpur {
+.map-pin-jabalpur {
     margin-left: 250px;
     margin-top: -319px;
 }
-.pin-seoni {
+.map-pin-seoni {
     margin-left: 235px;
     margin-top: -305px;
 }
 
-.pin-chandauli {
+.map-pin-chandauli {
     margin-left: 305px;
     margin-top: -370px;
 }
-.pin-prayagraj {
+.map-pin-prayagraj {
     margin-left: 280px;
     margin-top: -358px;
 }
-.pin-haidergarh {
+.map-pin-haidergarh {
     margin-left: 260px;
     margin-top: -395px;
 }
-.pin-barabanki {
+.map-pin-barabanki {
     margin-left: 250px;
     margin-top: -400px;
 }
-.pin-pilibhit {
+.map-pin-pilibhit {
     margin-left: 250px;
     margin-top: -420px;
 }
 
-.pin-jind {
+.map-pin-jind {
     margin-left: 175px;
     margin-top: -435px;
 }
-.pin-jhajjar1 {
+.map-pin-jhajjar1 {
     margin-left: 185px;
     margin-top: -430px;
 }
-.pin-jhajjar2 {
+.map-pin-jhajjar2 {
     margin-left: 185px;
     margin-top: -420px;
 }
-.pin-hisar {
+.map-pin-hisar {
     margin-left: 190px;
     margin-top: -418px;
 }
-.pin-panipat {
+.map-pin-panipat {
     margin-left: 178px;
     margin-top: -425px;
 }
-.pin-fatehbad {
+.map-pin-fatehbad {
     margin-left: 190px;
     margin-top: -440px;
 }
 
-.pin-suratgarh {
+.map-pin-suratgarh {
     margin-left: 145px;
     margin-top: -437px;
 }
-.pin-vadodara {
+.map-pin-vadodara {
     margin-left: 135px;
     margin-top: -310px;
 }
 
+.map-num {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    /* cursor: pointer; */
+}
 
+.map-num-ap {
+    margin-left: 225px;
+    margin-top: -180px;
+}
+
+.map-num-ct {
+    margin-left: 295px;
+    margin-top: -310px;
+}
+
+.map-num-up {
+    margin-left: 255px;
+    margin-top: -390px;
+}
+
+.map-num-hr {
+    margin-left: 185px;
+    margin-top: -435px;
+}
 
 
 #INAP,
@@ -205,7 +248,8 @@ button {
 #INCT, 
 #INHR,
 #INGJ {
-    fill: rgba(0, 128, 0, 0.904);
+    fill: var(--stateColor);
+    /* backdrop-filter: blur(5px); */
 }
 
 #INAP:hover,
@@ -218,9 +262,27 @@ button {
     fill: #4dff56;
     /* cursor: url(./images/click\ \(1\).png), auto; */
     cursor:pointer;
+    filter: drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 10px #4dff56);
 }
 
-.project-card-container {
+#INAP2,
+#INUP2,
+#INCT2, 
+#INHR2 {
+    fill: var(--stateColor);
+}
+
+#INAP2:hover,
+#INUP2:hover,
+#INCT2:hover,  
+#INHR2:hover {
+    fill: #4dff56;
+    filter: drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 2px #4dff56) drop-shadow(0 0 10px #4dff56);
+    /* cursor: url(./images/click\ \(1\).png), auto; */
+    cursor:pointer;
+}
+
+.map-project-card-container {
     display: none;
 }
 
@@ -240,54 +302,60 @@ button {
     height: auto;
 } */
 
-.kakinada-text {
+.map-kakinada-text {
     display: none;
 }
 
-.pin-kakinada1:hover + .kakinada-text {
+.map-pin-kakinada1:hover + .kakinada-text {
     display: block;
     position: absolute;
 }
 
 /* ADDING CLASSLISTS TO FETCH IN JAVASCRIPT */
-.project-card-containers {
+.map-project-card-containers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: max-content;
     gap: 16px;
 }
 
-.project-card {
+.map-project-card {
     border: 1px solid rgba(0, 128, 0, 0.226);
-    padding: 24px;
+    padding: 16px;
     height: max-content;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    background-color: rgba(172, 255, 47, 0.445);
+    align-items: center;
+    background-color: hsl(110, 100%, 40%, 0.6);
     border-radius: 8px;
-    gap: 8px;
+    gap: 16px;
 }
 
-.project-card-new .completed {
+.map-project-card-new .completed {
     background-color: greenyellow;
 }
 
 h5 {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     opacity: 0.5;
 }
 
-.project-card.progress {
+.map-project-card.map-progress {
     background-color: rgba(107, 107, 104, 0.089);
 }
 
-.project-card > div > p {
+.map-project-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.map-project-card > div > p {
     font-weight: 500;
 }
 
-.card-image {
-    width: 60px;
+.map-card-image {
+    width: 50px;
     height: auto;
     opacity: 0.5;
     /* background: #4dff56; */
