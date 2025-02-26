@@ -242,3 +242,38 @@ function clickSound() {
     spin.currentTime = 0;
     spin.play();
 }
+
+// Feedstock Portfolio 
+
+let agriWasteBtn = document.getElementById('agri-waste-button')
+let mswWasteBtn = document.getElementById('msw-waste-button')
+let preWasteBtn = document.getElementById('pre-waste-button')
+
+agriWasteBtn.addEventListener('click', () => {
+    document.getElementById('agri-waste-info').style.display = 'flex';
+    document.getElementById('msw-waste-info').style.display = 'none';
+    document.getElementById('pre-waste-info').style.display = 'none';
+
+    agriWasteBtn.classList.add('active-waste-button')
+    mswWasteBtn.classList.remove('active-waste-button')
+    preWasteBtn.classList.remove('active-waste-button')
+})
+mswWasteBtn.addEventListener('click', () => {
+    document.getElementById('agri-waste-info').style.display = 'none';
+    document.getElementById('msw-waste-info').style.display = 'flex';
+    document.getElementById('pre-waste-info').style.display = 'none';
+
+    agriWasteBtn.classList.remove('active-waste-button')
+    mswWasteBtn.classList.add('active-waste-button')
+    preWasteBtn.classList.remove('active-waste-button')
+})
+
+preWasteBtn.addEventListener('click', () => {
+    document.getElementById('agri-waste-info').style.display = 'none';
+    document.getElementById('msw-waste-info').style.display = 'none';
+    document.getElementById('pre-waste-info').style.display = 'flex';
+
+    agriWasteBtn.classList.remove('active-waste-button')
+    mswWasteBtn.classList.remove('active-waste-button')
+    preWasteBtn.classList.add('active-waste-button')
+})

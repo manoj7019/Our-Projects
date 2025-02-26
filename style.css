@@ -10,6 +10,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.arrow-icon {
+    width: 24px;
+}
+
 /* Animated Navbar & Header on Scroll  */
 
 :root {
@@ -153,7 +157,18 @@ a {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button-anchor:hover {
+.map-hero-button-anchor button {
+    font-size: 24px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    border-radius: 8px;
+}
+
+.map-hero-button-anchor:hover {
     transform: scale(1.125);
     transition: 0.3s;
 }
@@ -539,6 +554,97 @@ h5 {
     /* background: #4dff56; */
 }
 
+/* Projects based on Waste - Section  */
+
+.projects-waste-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 96px 0;
+}
+
+.projects-waste-container h1 {
+    margin-bottom: 64px;
+}
+
+.project-waste-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin: 0 auto;
+    /* padding: 32px; */
+}
+
+.project-waste-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    padding: 32px;
+    width: calc((1000px - 128px)/3);
+    text-align: center;
+}
+
+.active-waste-button {
+    filter: grayscale(0);
+    font-weight: 700;
+    background: hsla(120, 100%, 20%, 0.1);
+    border-radius: 8px 8px 0 0;
+    transition: 0.3s ease;
+}
+
+.project-waste-button-icon {
+    width: 80px;
+}
+
+.project-waste-info-container {
+    /* background: hsla(120, 100%, 20%, 0.1); */
+    border-radius: 8px 8px 0 0;
+}
+
+.project-waste-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 1000px;
+    padding: 64px;
+    margin: 0 auto;
+    transition: 0.3s;
+    line-height: 24px;
+    background: hsla(120, 100%, 20%, 0.1);
+}
+
+/* #msw-waste-button, #pre-waste-button {
+    filter: grayscale(100%);
+} */
+
+#msw-waste-info, #pre-waste-info {
+    display: none;
+}
+
+.project-waste-info img {
+    width: 400px;
+    height: 300px;
+}
+
+.project-waste-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-waste-info div p{
+    font-size: 16px;
+}
+
+p span {
+    font-weight: 700;
+}
+
 /* Landmark-projects */
 
 .landmark-projects {
@@ -622,6 +728,7 @@ h5 {
 
 .landmark-projects-project-right > h2 {
     font-size: 24px;
+    color: darkgreen;
 }
 
 .landmark-projects-project-info > .landmark-projects-icon {
@@ -638,20 +745,6 @@ h5 {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-}
-
-button {
-    color: white;
-    background-color: darkgreen;
-    border: none;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    gap: 32px;
-    border-radius: 8px;
-    /* box-shadow: 2px 0px 10px rgba(128, 128, 128, 0.322); */
 }
 
 .lp-button {
@@ -769,4 +862,68 @@ button {
     .landmark-projects-container::-webkit-scrollbar {
         display: none;
     }
+}
+
+/* Footer section  */
+
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 48px;
+    padding: 48px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+    align-items: flex-start;
+}
+
+.footer-left .logo {
+    height: 48px;
+    width: auto;
+}
+
+.footer-right {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    /* padding: 16px; */
+}
+
+.footer-links > a {
+    color: gray;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-links > a:hover {
+    color: white;
+    /* font-weight: 600; */
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons > a {
+    padding: 0;
+}
+
+.social-icon {
+    height: 32px;
+    width: 32px;
 }
