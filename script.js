@@ -1,3 +1,7 @@
+let mapClick = document.querySelector('#player');
+    mapClick.currentTime = 0;
+
+
 document.getElementById('map-igrpl-project-box').style.display = 'none';
 
 document.getElementById('map-bio-epc-button').classList.add('map-active-button');
@@ -7,16 +11,16 @@ document.getElementById('map-igrpl-button').addEventListener('click', () => {
     document.getElementById('map-bio-epc-button').classList.remove('map-active-button');
     document.getElementById('map-igrpl-project-box').style.display = 'block';
     document.getElementById('map-bio-epc-project-box').style.display = 'none';
+    mapClick.play();
 })
-
-
 
 document.getElementById('map-bio-epc-button').addEventListener('click', () => {
     console.log('map-bio-epc-button clicked');
     document.getElementById('map-bio-epc-button').classList.add('map-active-button');
     document.getElementById('map-igrpl-button').classList.remove('map-active-button');
     document.getElementById('map-bio-epc-project-box').style.display = 'block';
-    document.getElementById('map-igrpl-project-box').style.display = 'none';}
+    document.getElementById('map-igrpl-project-box').style.display = 'none';
+    mapClick.play();}
 )
 
 document.getElementById('INMP').addEventListener('click', function() {
@@ -28,6 +32,7 @@ document.getElementById('INMP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INMP').addEventListener('click', function() {
     document.getElementById('INMP').style.fill = '#4dff56';
@@ -49,6 +54,7 @@ document.getElementById('INUP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INUP').addEventListener('click', function() {
     document.getElementById('INUP').style.fill = '#4dff56';
@@ -69,6 +75,7 @@ document.getElementById('INHR').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INHR').addEventListener('click', function() {
     document.getElementById('INHR').style.fill = '#4dff56';
@@ -89,6 +96,7 @@ document.getElementById('INAP').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INAP').addEventListener('click', function() {
     document.getElementById('INAP').style.fill = '#4dff56';
@@ -109,6 +117,7 @@ document.getElementById('INCT').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ap').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INCT').addEventListener('click', function() {
     document.getElementById('INCT').style.fill = '#4dff56';
@@ -129,6 +138,7 @@ document.getElementById('INRJ').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ap').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-gj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INRJ').addEventListener('click', function() {
     document.getElementById('INRJ').style.fill = '#4dff56';
@@ -149,6 +159,7 @@ document.getElementById('INGJ').addEventListener('click', function() {
     document.getElementById('map-project-card-container-ap').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ct').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-rj').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INGJ').addEventListener('click', function() {
     document.getElementById('INGJ').style.fill = '#4dff56';
@@ -172,6 +183,7 @@ document.getElementById('INUP2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-hr2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ap2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INUP2').addEventListener('click', function() {
     document.getElementById('INUP2').style.fill = '#4dff56';
@@ -186,6 +198,7 @@ document.getElementById('INHR2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ap2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INHR2').addEventListener('click', function() {
     document.getElementById('INHR2').style.fill = '#4dff56';
@@ -200,6 +213,7 @@ document.getElementById('INAP2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-hr2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ct2').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INAP2').addEventListener('click', function() {
     document.getElementById('INAP2').style.fill = '#4dff56';
@@ -214,6 +228,7 @@ document.getElementById('INCT2').addEventListener('click', function() {
     document.getElementById('map-project-card-container-up2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-hr2').classList.remove('map-project-card-containers');
     document.getElementById('map-project-card-container-ap2').classList.remove('map-project-card-containers');
+    mapClick.play();
 })
 document.getElementById('INCT2').addEventListener('click', function() {
     document.getElementById('INCT2').style.fill = '#4dff56';
@@ -221,3 +236,9 @@ document.getElementById('INCT2').addEventListener('click', function() {
     document.getElementById('INHR2').style.fill = 'var(--stateColor)';
     document.getElementById('INAP2').style.fill = 'var(--stateColor)';
 })
+
+function clickSound() {
+    let spin = document.querySelector('#player');
+    spin.currentTime = 0;
+    spin.play();
+}
