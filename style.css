@@ -134,8 +134,8 @@ body {
 /* Our Projects  */
 
 .map-our-projects {
-    background: black;
-    color: white;
+    /* background: black; */
+    /* color: white; */
     /* margin-top: -70px; */
 }
 
@@ -180,7 +180,7 @@ a {
 
 :root {
     /* --stateColor: hsla(120, 100%, 20%, 0.6); */
-    --stateColor: hsla(120, 100%, 20%, 0.6);
+    --stateColor: hsla(120, 100%, 20%);
 }
 
 .map-projects-head {
@@ -212,10 +212,10 @@ button {
 }
 
 .map-active-button {
-    background-color: hsl(110, 100%, 20%, 0.1);
-    border: 1px solid hsl(110, 100%, 40%);
+    background-color: hsl(110, 100%, 20%);
+    /* border: 1px solid hsl(110, 100%, 40%); */
     color: white;
-    filter: drop-shadow(0 0 10px #4dff56) drop-shadow(0 0 50px #4dff56);
+    /* filter: drop-shadow(0 0 10px #4dff56) drop-shadow(0 0 50px #4dff56); */
 }
 
 .map-state {
@@ -252,13 +252,13 @@ li {
 }
 
 h2 {
-    color: #4dff56;
+    color: var(--stateColor);
 }
 
 .important-text {
     font-weight: 600;
     /* color: hsl(110, 100%, 40%); */
-    color: #4dff56;
+    color: var(--stateColor);
 }
 /* Add more state positions as needed */
 
@@ -502,7 +502,7 @@ h2 {
     /* background-color: hsl; */
     border-radius: 8px;
     gap: 16px;
-    filter: drop-shadow(0 0 25px #4dff56);
+    /* filter: drop-shadow(0 0 25px #4dff56); */
     /* border-left: 10px solid hsl(110, 100%, 40%); */
 }
 
@@ -511,7 +511,7 @@ h2 {
     height: 60px;
     margin-left: -10px;
     border-radius: 4px 0 0 4px;
-    background-color: hsl(110, 100%, 40%);
+    background-color: var(--stateColor);
     z-index: -10;
 }
 
@@ -525,11 +525,11 @@ h5 {
 }
 
 .map-project-card.map-progress {
-    background-color: rgba(107, 107, 104, 0.089);
+    background-color: rgba(107, 107, 104, );
 }
 
 .map-project-card > div > h2 {
-    color: #4dff56;
+    color: var(--stateColor);
 }
 
 .map-project-card > div {
