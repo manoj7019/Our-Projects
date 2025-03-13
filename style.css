@@ -100,7 +100,7 @@ body {
 }
 
 .nav-one-item:nth-child(2) {
-    color: #4dff56;
+    /* color: #4dff56; */
 }
 
 .nav-one-item:hover {
@@ -134,9 +134,8 @@ body {
 /* Our Projects  */
 
 .map-our-projects {
-    /* background: black; */
-    /* color: white; */
-    /* margin-top: -70px; */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
