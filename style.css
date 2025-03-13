@@ -24,8 +24,8 @@ body {
 
 
 .header-one {
-    --__animationStartsAfter: 110vh;
-    --__animationDistance: 120vh;
+    --__animationStartsAfter: 180vh;
+    --__animationDistance: 200vh;
     /* --__surfaceColorStart: hsla(0, 12%, 5%, 0.952); */
     /* --__surfaceColorStart: rgb(0, 0, 0); */
     --__surfaceColorStart: hsla(0, 0%, 0%, 1);
